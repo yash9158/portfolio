@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+body{
+    background: #ebffcc;
+    color: #333;
+    background-image: url(scott-webb-UjupleczBOY-unsplash.jpg);
+    background-size: cover;
+}
+.nav img{
+    width: 120px;
+    height: 19vh;
+    margin-block: -4vh;
+    padding-left: 2vw;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(219, 7, 219);
+    align-items: center;
+    
+    width: 100vw;
+    }
+.rightnav{
+    display: flex;
+    align-items: center;
+    margin-right: 4vw;
+    gap: 4vw;
+    background-color: rgb(219, 7, 219);
+
+}
+.rightnav a {
+    position: relative; 
+    text-decoration: none;
+    color: #fff;
+    font-size: 3.5vh;
+    font-weight: 600;
+}
+
+.rightnav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: 0;
+    height: 5px;
+    background-color: #1be5c3; 
+    transition: width 0.3s ease; 
+}
+
+.rightnav a:hover::after {
+    width: 100%;
+}
+.intro h1{
+    color: rgb(83, 81, 81);
+    font-size: 55px;
+    margin-top: 23vh;
+    margin-left: 11vh;
+    line-height: 12vh;
+    word-spacing: 1vw;
+}
+.mainimg{
+    display: flex;
+}
+.intro span{
+    font-size: 3.5rem;
+    font-weight: bold;
+    white-space: nowrap; 
+    animation: colorChange 2s ease-in-out infinite alternate; 
+}
+@keyframes colorChange {
+    from {
+        color: rgb(83, 81, 81);
+    }
+
+    to {
+        color: rgb(219, 7, 219) ;
+    }
+}
+/* ********part2********* */
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.div2 h1{
+    color: rgb(83, 81, 81) ;
+    font-size: 40px;
+    margin-top: 6vh;
+    margin-left: 5vw;
+    word-spacing: 0.5vw;
+}
+.aboutme{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4vh;
+    margin-left: 3.3vw;
+    gap: 7vw;
+    font-weight: 600;
+}
+.aboutme a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(83, 81, 81) ;
+    position: relative;
+    
+}
+.aboutme a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: 0;
+    height: 5px;
+    background-color: #1be5c3; 
+    transition: width 0.4s ease; 
+}
+.aboutme a:hover::after{
+    width: 100%;
+}
+.div2 h1 span{
+    font-weight: bold;
+    white-space: nowrap; 
+    animation: ColorChange 2s ease-in-out infinite alternate; 
+}
+@keyframes ColorChange {
+    from {
+        color: rgb(83, 81, 81);
+    }
+
+    to {
+        color: #1be5c3 ;
+    }
+}
+.div2 p{
+    color: rgb(83, 81, 81);
+    font-size: 20px;
+    text-align: justify;
+    margin-inline: 5vw;
+    margin-block: 2vh ;
+    line-height: 5vh;
+}
+.div2 p span{
+    color: #1be5c3;
+}
+.div2 p a{
+    text-decoration: none;
+    color: #1be5c3;
+}
+.div2 p a:hover{
+    opacity: 0.5;
+}
+.contents ul li{
+    color: rgb(83, 81, 81);
+    list-style: none;
+    margin-left: 19vw;
+    font-size: 26px;
+    line-height: 5vh;
+    margin-block: 2vh;
+}
+.contents ul li span{
+    color: #1be5c3;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contents {
+    display: none;
+}
+.contents.active{
+    display: block;
+}
+.achievements h1{
+    color:rgb(83, 81, 81) ;
+    font-size: 50px;
+    margin-top: 2vh;
+    margin-left: 35vw;
+    animation: accolor 2s ease-in-out infinite alternate; 
+}
+@keyframes accolor {
+    from {
+        color: rgb(83, 81, 81);
+    }
+
+    to {
+        color: rgb(219, 7, 219) ;
+    }
+}
+.ac1{
+    display: flex;
+    gap: 2vw;
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
+.ac1 p{
+    color:rgb(83, 81, 81) ;
+    font-size: 20px;
+    margin-top: 3px;
+}
+.ac1 a img{
+    height: 4vh;
+    width: 2vw;
+}
+.ac1 span{
+    color: green;
+    font-weight: 550;
+}
+.ac1.ac2 span{
+    color: blue;
+}
+/* ***********************My Works************* */
+.myworks h1{
+    font-size: 43px;
+    margin-left: 40%;
+    margin-top: 4vh;
+    animation: workcolor 2s ease-in-out infinite alternate; 
+}
+@keyframes workcolor {
+    from {
+        color: rgb(83, 81, 81);
+    }
+
+    to {
+        color: #1be5c3 ;
+    }
+}
+.imgcontainer{
+   
+    display: flex;
+    margin-top: 3vh;
+    padding-block: 3vh;
+    width: 70%;
+    margin-inline: auto;
+    
+}
+.imgtextcontainer{
+
+    width: 21vw;
+    margin-inline: 6.5vw;
+    position: relative;
+    overflow: hidden;
+}
+.img1{
+    
+    height: 45vh;
+    width: 21vw;
+    
+    border-radius: 12px;
+    background-color: #1be5c3;
+    background-image: url(img3.png);
+    background-size: cover;
+}
+.img2{
+    
+    height: 45vh;
+    width: 21vw;
+    
+    border-radius: 12px;
+    background-color: #1be5c3;
+    background-image: url(pexels-ovan-57690.jpg);
+    background-size: cover;
+}
+.iconpara{
+    display: flex;
+}
+.iconpara img{
+    height: 3vh;
+}
+.textcont{
+  
+    font-size: 19px;
+    width: 21vw;
+    height: 0vh;
+    background: linear-gradient(rgba(221, 219, 219, 0.6),rgb(254, 254, 254));
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    transition: height 0.2s;
+}
+
+.textcont h2{
+    text-align: center;
+    margin-block: 6vh;
+}
+.iconpara p{
+    text-align: center;
+    margin-top: 2vh;
+}
+.textcont a{
+   margin-left: 9vw;
+   width: 60px;
+   
+   
+   background-color: rgb(107, 126, 248);
+   border-radius: 50%;
+}
+.textcont a img{
+    
+    height:9vh;
+    width: 9vh;
+}
+.textcont.t2 a img{
+    margin-top: 6vh;
+}
+.img1{
+    transition: transform 0.3s ease-in-out;
+}
+.img1:hover{
+    transform: scale(1.2);
+}
+.img2{
+    transition: transform 0.3s ease-in-out;
+}
+.img2:hover{
+    transform: scale(1.2);
+}
+.imgtextcontainer:hover .textcont{
+    height: 45vh;
+    cursor: pointer;
+}
+
+/* *******************ContactSection***************** */
+.social h1{
+    font-size: 45px;
+    margin-top: 12vh;
+    margin-left: 8vw;
+}
+.mail{
+    display: flex;
+    gap: 1vw;
+    margin-left: 5vw;
+    margin-top: 3vh;
+    font-size: 20px;
+}
+.mail a img{
+    height: 5vh;
+    width: 2vw;
+    margin-top: -0.3vh;
+}
+.mail a img:hover{
+    opacity: 0.6;
+}
+.call{
+    display: flex;
+    gap: 1vw;
+    margin-left: 5vw;
+    margin-top: 3vh;
+    font-size: 20px;
+}
+.call a img{
+    height: 5vh;
+    width: 2vw;
+    margin-top: -0.3vh;
+}
+.call a img:hover{
+    opacity: 0.6;
+}
+.tags{
+    display: flex;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    gap: 2vw;
+}
+.tags a img{
+    height: 6vh;
+    width: 3vw;
+}
+.tags a img:hover{
+    opacity: 0.6;
+}
+.contacts{
+    display: flex;
+}
+.form{
+    margin-top: 10vh;
+    margin-left: 11vw;
+}
+#name{
+    height: 7vh;
+    width:  43vw;
+    border-radius: 11px;
+    font-size: 20px;
+}
+#message{
+    border-radius: 11px;
+    font-size: 20px;
+    padding-bottom: 23vh;
+    width: 43vw;
+    
+}
+form{
+    margin-block: 3vh;
+}
+#button{
+    padding-inline: 3vw ;
+    padding-block: 2vh;
+    border-radius: 12px;
+    font-size: 20px;
+    color: white;
+    background-color: #1be5c3;
+    cursor: pointer;
+    border-color: #1be5c3;
+}
+#button:hover{
+    opacity: 0.6;
+}
+
+

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Ashu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="nav">
+       <img src="logo.png" alt="">
+       <div class="rightnav">
+        <div class="home">
+            <a href="">Home</a>
+        </div>
+        <div class="portfolio">
+            <a href="">Portfolio</a>
+        </div>
+        <div class="services">
+            <a href="">Services</a>
+        </div>
+        <div class="about">
+            <a href="">About</a>
+        </div>
+        <div class="contact">
+            <a href="">Contact</a>
+        </div>
+       </div>
+    </div>
+    <div class="mainimg">
+        <img src="image1.png" alt="">
+        <div class="intro">
+            <h1>Hey There! <br> I'm <span>Yash</span> Kumar</h1>
+        </div>
+    </div>
+    <div class="div1">
+        <div class="container">
+            <div class="div2">
+                <h1>Wanna Know <span>About</span> Me?</h1>
+                <p>Hey There! I'm Yash Kumar , a <span>CSE undergrad</span> , <span>Tech enthusiast</span> and a <span>Developer</span>
+                   from Lucknow , India. Currently, I'm in Second Year of College pursuing my BTech degree
+                   in CSE major from Institute of Engineering and Technology, Lucknow. <br>
+                   Currently I'm working on web projects alongwith competing in various <span>Competitive Programming</span>
+                   contests taking place on various platforms like <a href="">Codeforces</a>, <a href="">Codechef</a>,
+                   and <a href="">Atcoder</a> to hone my Logical Thinking and <span>Data Structures</span>. You can get to know about
+                   my works and achievements below.
+                </p>
+                <div class="aboutme">
+                    <div class="tab-links activelink" onclick="opentab('skill')">
+                       <a href="">Skill</a>
+                    </div>
+                    <div class="tab-links" onclick="opentab('por')">
+                       <a href="">Position of Responsibility</a>
+                    </div>
+                 <div class="tab-links" onclick="opentab('education')">
+                    <a href="">Education</a>
+                 </div>
+                </div>
+                <div class="contents active" id="skill">
+                    <ul>
+                        <li><span>Web Development</span><br>Frontend</li>
+                        <li><span>Data Structures & Algorithms</span><br>C,C++</li>
+                        <li><span>Language</span><br>C,C++, HTML/CSS, Javascript, Python</li>
+                    </ul>
+                </div>
+                <div class="contents" id="por">
+                    <ul>
+                        <li>Led a team in Intra College Hackathon</li>
+                    </ul>
+                </div>
+                <div class="contents" id="education">
+                    <ul>
+                        <li><span>Undergraduate</span><br>BTech(Computer Science and Engineering)(GPA-8.95) </li>
+                        <li><span>Intermediate</span><br>93%</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="div3">
+                <img src="img2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="achievements">
+        <h1>Achievements</h1>
+        <div class="ac1 ac2">
+            <img src="icons8-right-26.png" alt="">
+            <p>Ranked <span>Pupil At Codeforces</span> at Codechef.</p>
+        </div>
+        <div class="ac1 ac2">
+            <img src="icons8-right-26.png" alt="">
+            <p>Ranked <span>3-Star</span> at Codechef.</p>
+        </div>
+        
+    </div>
+
+    <!-- ****************************My Works********************************** -->
+      <div class="myworks">
+        <h1>My Works</h1>
+         <div class="imgcontainer">
+            <div class="imgtextcontainer">
+                <div class="img img1">
+
+                </div>
+               
+                <div class="textcont">
+                <h2>Timex</h2>
+               
+                <div class="iconpara">
+                    <p>Enables College Students to avoid time consuming process of watching PDFs to 
+                        check for their classes.</p>
+                    </div>
+                    <a href=""><img src="icons8-github-32.png" alt=""></a>
+                
+            </div>
+            </div>
+            <div class="imgtextcontainer">
+                <div class="img img2">
+
+                </div>
+              
+                <div class="textcont t2">
+                <h2>Portfolio Site</h2>
+              
+                <div class="iconpara">
+                    <p>A site about my own skills and achievements.</p>
+                </div>
+                <a href=""><img src="icons8-github-32.png" alt=""></a>
+            </div>
+            </div>
+         </div>
+      </div>
+          
+      <!-- ******************************Contact section*************** -->
+      <div class="contacts">
+        <div class="social">
+            <h1>Reach Me</h1>
+            <div class="mail">
+                <a href="yashkumar9158@gmail.com"><img src="icons8-mail-50.png" alt=""></a>
+                <p>yashkumar9158@gmail.com</p>
+            </div>
+            <div class="call">
+                <a href=""><img src="icons8-call-50.png" alt=""></a>
+                <p>7302626105</p>
+            </div>
+            <div class="tags">
+                <a href=""><img src="icons8-facebook-50.png" alt=""></a>
+                <a href=""><img src="icons8-github-50.png" alt=""></a>
+                <a href=""><img src="icons8-instagram-50.png" alt=""></a>
+                <a href=""><img src="icons8-linkedin-50.png" alt=""></a>
+            </div>
+        </div>
+        <div class="form">
+            <form name="submit-to-google-sheet" action="">
+                <input type="text" id="name" placeholder="Name" required>
+            </form>
+            <form action="">
+                <input type="text" id="name" placeholder="Email" required>
+            </form>
+            <form action="">
+                <input type="text" id="message" placeholder="Message" required>
+            </form>
+            <form action="">
+                <input type="button" id="button" value="Submit">
+            </form>
+        </div>
+      </div>
+        <!-- **************Javascript*********** -->
+    <script>
+    var tablinks = document.querySelectorAll('.tab-links a');
+    var tabcontents = document.querySelectorAll('.contents');
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("activelink");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active");
+        }
+        event.currentTarget.classList.add("activelink");
+
+        // Show the content with the corresponding ID
+        document.getElementById(tabname).classList.add("active");
+
+    }
+    for (tablink of tablinks) {
+        tablink.addEventListener('click', function (event) {
+            event.preventDefault();
+            var tabId = event.target.getAttribute('href').substring(1); // Remove the '#' from the href
+            opentab(tabId);
+        });
+    }
+
+    // Open the default tab on page load (e.g., 'skill')
+    opentab('skill');
+
+    // ************************My works******************
+    
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw2dEm1pSGIJu0v9-XMERUqKcjrEk8IPltF1vYKFgGNQtOtJWCme6Q6SF9gjIN3Albs/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
